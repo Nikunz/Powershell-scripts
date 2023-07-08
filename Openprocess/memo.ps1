@@ -14,7 +14,7 @@ param([string]$text = "")
 try {
 	if ($text -eq "" ) { $text = Read-Host "Enter the text to memorize" }
 
-	$Path = "~/memos.csv"
+	$Path = "C:\Users\koppu\powershell-scripts\Openprocess\memos.csv"
 	$Time = Get-Date -format FileDateTimeUniversal
 	$Line = "$Time,$text"
 
