@@ -1,0 +1,11 @@
+# Specify the path of the folder to delete
+$folderPath = "C:\Users\koppu\powershell-scripts\DeleteProcess\Folder.to.be.deleted"
+
+# Check if the folder exists
+if (Test-Path $folderPath) {
+    # Delete the folder
+    Remove-Item -Path $folderPath -Recurse -Force
+    Write-Host "Folder deleted successfully."
+} else {
+    Write-Host "Folder does not exist."
+}
