@@ -9,7 +9,7 @@
 	Specifies the speed (250 ms by default)
 #>
 
-param([string]$text = "`nHello World`n-----------`n* PowerShell is powerful - fully control your computer`n* PowerShell is cross-platform - available for Linux, Mac OS and Windows`n* PowerShell is open-source and free`n* PowerShell is easy to learn`n* PowerShell is fully documented`n`nThanks for watching`nMarkus`n", [int]$speed = 200) # in milliseconds
+param([string]$text = "`nHello Everyone`n-----------`n* Learning PowerShell is harder than it seems`n* but still i try to write scripts as much as i can`n* hopefully this script impress you`n* Thanks for listening`n", [int]$speed = 200) # in milliseconds
 
 try {
 	$Random = New-Object System.Random
