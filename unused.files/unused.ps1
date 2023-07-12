@@ -9,7 +9,7 @@
 	Specifies the number of days
 #>
 
-param([string]$DirTree = "", [int]$Days = 100)
+param([string]$DirTree = "C:\Users\koppu\Downloads", [int]$Days = 100)
 
 write-host "Listing files in $DirTree with last access time older than $Days days"
 
@@ -22,3 +22,4 @@ try {
 } catch {
 	"Error in line $($_.InvocationInfo.ScriptLineNumber): $($Error[0])"
 	exit 1
+}
